@@ -77,7 +77,7 @@ npm run dev
 ---
 
 ## Considerações Finais 📎
-# Este projeto representa meu compromisso com a evolução constante como desenvolvedor frontend. Ele serve tanto como vitrine profissional quanto como ambiente de experimentação com novas tecnologias, conceitos de design e práticas modernas de desenvolvimento.
+Este projeto representa meu compromisso com a evolução constante como desenvolvedor frontend. Ele serve tanto como vitrine profissional quanto como ambiente de experimentação com novas tecnologias, conceitos de design e práticas modernas de desenvolvimento.
 
 - Fique à vontade para explorar o código, dar feedbacks ou entrar em contato!
 - www.linkedin.com/in/rafael-falaschi-97a1542ab 🔗
