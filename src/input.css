@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-thumb-orange {
+    scrollbar-color: rgb(204, 85, 0) transparent;
+  }
+
+  /* Para navegadores WebKit (Chrome, Edge, Safari) */
+  .scrollbar-thumb-orange::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-thumb-orange::-webkit-scrollbar-thumb {
+    background-color: rgb(235, 98, 0);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thumb-orange::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth   overflow-y-scroll h-64 scrollbar-thin scrollbar-thumb-orange">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Rafael Falaschi, desenvolvedor front-end">
+    <meta name="author" content="Rafael Falaschi">
+
+    <title>Portfólio | Rafael Falaschi</title>
+
+    <!--GoogleFonts/Css-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <!--Font awesome-->
+    <link href="https://cdn.jsdelivr.net/npm/simple-icons-font@v5/font/simple-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class=" m-0 p-0 box-content bg-colorBackground  dark:bg-colorBgWhite ease-in duration-300">
+    <header class="fixed bg-colorDesfoque w-full z-40 after:content-[''] after:block after:absolute after:w-full after:h-[0.1rem] after:bg-colorWriting">
+        <div class="container m-auto max-w-96 p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl">
+            <nav class="flex justify-between items-center py-4">
+                <i class="fa-solid fa-sun text-colorWriting cursor-pointer" id="dark-mode" aria-label="Ativar modo escuro"></i>
+
+                <a href="#inicio" class="text-colorSWhite text-2xl dark:text-black">
+                    PORT<span class="text-colorWriting">FÓLIO</span>
+                </a>
+
+                <button class="material-symbols-outlined cursor-pointer text-colorWriting" id="menu-btn" aria-label="Abrir menu de navegação"  aria-expanded="false" aria-controls="menu">
+                    menu
+                </button>
+
+                <ul id="menu"  class="hidden text-center text-colorSWhite text-3xl absolute top-1/2 left-1/2 transform translate-x-[-50%] translate-y-[40%] sm:translate-y-[55%]">
+                    <li class="py-5"><a href="#inicio" class="hover:text-colorWriting duration-300">inicio</a></li>
+                    <li class="py-5"><a href="#sobre" class="hover:text-colorWriting  duration-300">Sobre</a></li>
+                    <li class="py-5"><a href="#projetos" class="hover:text-colorWriting duration-300">Projetos</a></li>
+                    <li class="py-5"><a href="#habilidades" class="hover:text-colorWriting duration-300">Habilidades</a></li>
+                    <li class="py-5"><a href="#contatos" class="hover:text-colorWriting duration-300">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div  class="fixed inset-0 w-screen h-screen backdrop-blur-[15px] bg-black/20 z-10 opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out" id="blur-overlay"></div>
+        
+        <section class="bg-imgBackground bg-cover bg-center h-screen w-full font-sans" id="inicio" >
+            <div class="container m-auto max-w-96 h-screen p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl flex flex-col justify-center items-center gap-6 text-colorSWhite">
+                <figure class="max-w-sm" >
+                    <img src="./assets/imagens/perfil/foto perfil.jpg" class="rounded-full animate-float mb-5 border border-colorWriting" alt="Foto de perfil de Rafael Falaschi">
+                </figure>
+
+                    <p class="text-lg font-medium">Olá, recrutador! 👋</p>
+                    <h1 class="text-4xl font-bold">Me chamo Rafael</h1>
+                    <h2 class="text-lg font-medium overflow-hidden whitespace-nowrap animate-typing  border-r-2 border-colorWriting">Desenvolvedor <span class="text-colorWriting animate-blinking">Front-end.</span></h2>
+                
+                <ul class="flex gap-8 items-center" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <li class="min-h-1 min-w-10 bg-gray-400"></li>
+                    <li><a href="https://www.linkedin.com/in/rafael-falaschi-97a1542ab/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin text-2xl text-blue-600" aria-label="Abrir linkedin de Rafael Falaschi"></i></a></li>
+                    <li><a href="https://github.com/RafaelFalaschii" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github text-2xl text-zinc-300" aria-label="Abrir Git-hub de Rafael Falaschi"></i></a></li>
+                    <li><a href="mailto:rafaelfalaschi15@gmail.com"><i class="fa-solid fa-envelope text-2xl text-orange-500" aria-label="Abrir Gmail de Rafael Falaschi"></i></a></li>
+                    <li class="min-h-1 min-w-10 bg-gray-400"></li>
+                </ul>
+            </div>
+        </section> <!--Hero Section-->
+
+        <section class="py-4 xl:py-10" id="sobre">
+            <div class="container m-auto max-w-96  p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl text-colorSWhite">
+
+            <div class="flex flex-col gap-4 p-4 border-2 border-zinc-800 dark:bg-colorBackground rounded-md lg:flex-row"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <figure class="max-w-full lg:w-6/12">
+                    <img src="./assets/imagens/perfil/mypersonagem.png" alt="Foto personagem Rafael Falaschi" class="w-full max-h-96 object-cover">
+                </figure>
+
+                <article class="lg:w-6/12 ">
+                    <h2 class="text-white font-bold text-2xl">Quem sou</h2>
+                    <div class="max-w-16 h-1 bg-colorWriting animate-typing"></div>
+                
+                    <h3 class="text-colorWriting">Front-end developer <i class="fa-solid fa-laptop-code"></i> <i class="fa-solid fa-mug-saucer"></i></h3>
+                    <p class="text-colorSWhite text-justify pt-6 "><span class="text-colorWriting">Me chamo Rafael Falaschi,</span> Atualmente curso Análise e Desenvolvimento de Sistemas na <a href="https://www.unipar.br/" class="text-red-600" target="_blank">Unipar - Universidade Paranaense</a>, onde venho ampliando 
+                    meus conhecimentos em programação e desenvolvimento web. <br>
+                    Estou sempre em busca de novos aprendizados que me ajudem a evoluir como desenvolvedor. Meu 
+                    foco é criar interfaces modernas, acessíveis e funcionais, buscando constantemente melhorar minhas habilidades técnicas e 
+                    colaborar em projetos que proporcionem impacto positivo. <br>
+                    Estou comprometido com meu crescimento profissional e aberto a oportunidades que me desafiem a aprender cada vez mais, 
+                    contribuindo com dedicação e proatividade em cada etapa do desenvolvimento.
+                    </p>
+                </article>
+            </div>
+                
+            </div>
+        </section> <!--About Section-->
+
+        <section>
+            <div class="container m-auto max-w-96  p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl text-colorSWhite" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <h2 class="text-colorWriting font-bold text-2xl lg:text-3xl overflow-hidden whitespace-nowrap animate-typing">Minha Jornada até aqui <i class="fa-solid fa-book text-colorSWhite dark:text-colorWriting"></i></h2>
+
+                <h3 class="text-center text-xl lg:text-3xl text-colorSWhite dark:text-black">Formações <i class="fa-solid fa-graduation-cap text-2xl"></i></h3>
+
+        <div class=" flex justify-center pt-4 gap-5 sm:gap-14">
+        <div >
+           
+            <article class="text-xs lg:text-base">
+                <h4 class="max-w-20  text-colorSWhite dark:text-black">Análise e desenvolvimento de sistema</h4>
+                <p class="text-zinc-500">Unipar</p>
+                <span class="text-zinc-500"><i class="fa-solid fa-calendar-days"></i> Fev.2024 - Jun.2026</span>
+            </article>  
+            
+            <article class="pt-20 text-xs lg:text-base">
+                <h4 class="max-w-20  text-colorSWhite dark:text-black">Curso em Video</h4>
+                <span class="text-zinc-500"><i class="fa-solid fa-calendar-days"></i> Jan.2025 - Atual</span>
+            </article>
+        </div>
+
+            <div class=" bg-colorWriting w-1 h-64 lg:h-72"></div>
+       
+         <div>
+            <article class="pt-20 text-xs lg:text-base">
+                <h4 class="max-w-20 text-colorSWhite dark:text-black">Fullstacks Web</h4>
+                <p class="text-zinc-500">B7Web</p>
+                <span class="text-zinc-500 "><i class="fa-solid fa-calendar-days"></i> Fev.2025 - Atual</span>
+            </article> 
+            
+            </div>    
+         </div>   
+        </section> <!--Journey Section-->
+
+        <section class="py-4 xl:py-10" id="projetos">
+            <div class="container m-auto max-w-96  p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl text-colorSWhite" data-aos="zoom-in-down" data-aos-duration="1000">
+            
+            <h2 class="text-colorWriting font-bold text-2xl lg:text-3xl overflow-hidden whitespace-nowrap animate-typing">Meus trabalhos <i class="fa-solid fa-code text-colorSWhite dark:text-colorWriting"></i></h2>
+
+        <div class="grid gap-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3"> <!--div pai-->
+            <article class="relative max-w-full lg:max-w-lg  pt-4 cursor-pointer hover:scale-110 transition duration-200 ease-in after:content-[''] after:block after:absolute after:w-full after:h-[0.2rem] after:bg-colorWriting"> <!--Projeto Arquitetura-->
+                <figure class="relative group overflow-hidden">
+                    <img src="./assets/imagens/projetos/site-arquitetura.png" alt="Projeto desenvolvido para portfólio de arquitetura." class="w-full min-h-60 block object-cover">
+                    
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-scan pointer-events-none"></div> <!--Animação indicadora-->  
+
+                <figcaption class="absolute inset-0 flex flex-col justify-center items-center gap-2 bg-black/80 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <p class="text-sm mb-2 px-4 text-center">Projeto desenvolvido para portfólio de arquitetura.</p>
+                    <a href="https://rafaelfalaschii.github.io/Projeto-freeArq/" target="_blank" rel="noopener noreferrer" class="border border-colorWriting rounded-lg p-2 text-xs hover:text-black hover:bg-colorWriting transition duration-300 ease-in">
+                        Ver Projeto
+                    </a>
+
+                    <ul class=" flex gap-4">
+                        <li><i class="fa-brands fa-html5 text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-css3-alt text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-js text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-figma text-3xl text-colorWriting"></i></li>
+                    </ul>
+                </figcaption>
+                
+                </figure>
+            </article>
+
+             <article class="relative max-w-full lg:max-w-lg pt-4 cursor-pointer hover:scale-110 transition duration-200 ease-in after:content-[''] after:block after:absolute after:w-full after:h-[0.2rem] after:bg-colorWriting"> <!--Projeto Santos-->
+                <figure class="relative group overflow-hidden">
+                    <img src="./assets/imagens/projetos/site-santos.png" alt="Projeto em homenagem a cidade de Santos-Sp." class="w-full min-h-60 block object-cover">
+                    
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-scan pointer-events-none"></div> <!--Animação indicadora-->
+
+                <figcaption class="absolute inset-0 flex flex-col justify-center items-center gap-2 bg-black/80 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <p class="text-sm mb-2 px-4 text-center">Projeto em homenagem a cidade de Santos-Sp.</p>
+                    <a href="https://rafaelfalaschii.github.io/Projeto-Santos-Sp/" target="_blank" rel="noopener noreferrer" class="border border-colorWriting rounded-lg p-2 text-xs hover:text-black hover:bg-colorWriting transition duration-300 ease-in">
+                        Ver Projeto
+                    </a>
+                    
+                    <ul class=" flex gap-4">
+                        <li><i class="fa-brands fa-html5 text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-css3-alt text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-js text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-figma text-3xl text-colorWriting"></i></li>
+                    </ul>
+                </figcaption>
+
+                </figure>
+            </article>
+
+            <article class="relative max-w-full lg:max-w-lg pt-4 cursor-pointer hover:scale-110 transition duration-200 ease-in after:content-[''] after:block after:absolute after:w-full after:h-[0.2rem] after:bg-colorWriting"> <!--Projeto Portfolio-->
+                <figure class="relative group overflow-hidden">
+                    <img src="./assets/imagens/projetos/site-my-portfolio.png" alt="Projeto meu primeiro portfólio." class="w-full min-h-60 block object-cover">
+                    
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-scan pointer-events-none"></div> <!--Animação indicadora-->
+
+                <figcaption class="absolute inset-0 flex flex-col justify-center items-center gap-2 bg-black/80 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <p class="text-sm mb-2 px-4 text-center">Projeto meu primeiro portfólio</p>
+                    <a href="https://rafaelfalaschii.github.io/Rafa-Portfolio/" target="_blank" rel="noopener noreferrer" class="border border-colorWriting rounded-lg p-2 text-xs hover:text-black hover:bg-colorWriting transition duration-300 ease-in">
+                        Ver Projeto
+                    </a>
+                    
+                    <ul class=" flex gap-4">
+                        <li><i class="fa-brands fa-html5 text-3xl text-colorWriting"></i></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 154" class="w-6 h-6 text-colorWriting"><path d="M128 0c-40 0-68 20-84 60 16-20 32-28 52-24 11 2.4 19 10.8 27 20 14 16 30 34 61 34 40 0 68-20 84-60-16 20-32 28-52 24-11-2.4-19-10.8-27-20-14-16-30-34-61-34Zm-84 60c-40 0-68 20-84 60 16-20 32-28 52-24 11 2.4 19 10.8 27 20 14 16 30 34 61 34 40 0 68-20 84-60-16 20-32 28-52 24-11-2.4-19-10.8-27-20-14-16-30-34-61-34Z"/></svg></li>
+                        <li><i class="fa-brands fa-js text-3xl text-colorWriting"></i></li>
+                        <li><i class="fa-brands fa-figma text-3xl text-colorWriting"></i></li>
+                    </ul>
+                </figcaption>
+
+                </figure>
+            </article>
+
+            <article class="relative max-w-full lg:max-w-lg pt-4 cursor-pointer hover:scale-110 transition duration-200 ease-in after:content-[''] after:block after:absolute after:w-full after:h-[0.2rem] after:bg-colorWriting"> <!--Projeto Portfolio-->
+                <figure class="relative group overflow-hidden">
+                    <img src="./assets/imagens/projetos/site-advocacia.png" alt="Projeto de advocacia." class="w-full min-h-60 block object-cover">
+                    
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-scan pointer-events-none"></div> <!--Animação indicadora-->
+
+                <figcaption class="absolute inset-0 flex flex-col justify-center items-center gap-2 bg-black/80 text-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+                    <p class="text-sm mb-2 px-4 text-center">Projeto de advocacia</p>
+                    <a href="" target="_blank" rel="noopener noreferrer" class="border border-colorWriting rounded-lg p-2 text-xs hover:text-black hover:bg-colorWriting transition duration-300 ease-in">
+                        Ver Projeto
+                    </a>
+                    
+                    <ul class=" flex gap-4">
+                        <i class="fa-brands fa-react text-3xl text-colorWriting"></i>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 154" class="w-6 h-6 text-colorWriting"><path d="M128 0c-40 0-68 20-84 60 16-20 32-28 52-24 11 2.4 19 10.8 27 20 14 16 30 34 61 34 40 0 68-20 84-60-16 20-32 28-52 24-11-2.4-19-10.8-27-20-14-16-30-34-61-34Zm-84 60c-40 0-68 20-84 60 16-20 32-28 52-24 11 2.4 19 10.8 27 20 14 16 30 34 61 34 40 0 68-20 84-60-16 20-32 28-52 24-11-2.4-19-10.8-27-20-14-16-30-34-61-34Z"/></svg></li>
+                        <i class="fa-solid fa-t text-3xl text-colorWriting"></i>
+                        <li><i class="fa-brands fa-figma text-3xl text-colorWriting"></i></li>
+                    </ul>
+                </figcaption>
+
+                </figure>
+            </article>
+
+        </div> <!--div pai-->
+        </div> <!--container-->
+        </section>
+
+        <section class="py-4 xl:py-10" id="habilidades">
+            <div class="container m-auto max-w-96  p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl text-colorSWhite" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <h2 class="text-colorWriting font-bold text-2xl  lg:text-3xl overflow-hidden whitespace-nowrap animate-typing">Habilidades <i class="fa-solid fa-building-columns text-colorSWhite dark:text-colorWriting"></i></h2>
+
+            <section class="flex flex-1 flex-wrap justify-around gap-4 p-4 lg:px-32">
+                <article class=" relative text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110 duration-300 ease-in-out">
+                    <figure>
+                        <i class="fa-brands fa-html5 text-colorWriting text-4xl"></i>
+                    </figure>
+                </article>
+
+                <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                        <i class="fa-brands fa-css3-alt text-4xl text-blue-500" ></i>
+                    </figure>
+                </article>
+
+               <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4 text-4xl bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 154" class="h-10 w-10 text-blue-400"><path d="M128 0c-40 0-68 20-84 60 16-20 32-28 52-24 11 2.4 19 10.8 27 20 14 16 30 34 61 34 40 0 68-20 84-60-16 20-32 28-52 24-11-2.4-19-10.8-27-20-14-16-30-34-61-34Zm-84 60c-40 0-68 20-84 60 16-20 32-28 52-24 11 2.4 19 10.8 27 20 14 16 30 34 61 34 40 0 68-20 84-60-16 20-32 28-52 24-11-2.4-19-10.8-27-20-14-16-30-34-61-34Z"/></svg>
+                    </figure>
+                </article>
+
+                <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                        <i class="fa-brands fa-bootstrap text-4xl text-purple-600"></i>
+                    </figure>
+                </article>
+
+                <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                        <i class="fa-brands fa-js text-4xl text-yellow-500"></i>
+                    </figure>
+                </article>
+
+                <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                        <i class="fa-brands fa-figma text-4xl text-red-600"></i>
+                    </figure>
+                </article>
+
+                <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                       <i class="fa-brands fa-sass text-4xl text-pink-600"></i>
+                    </figure>
+                </article>
+
+                <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                       <i class="fa-brands fa-github text-4xl text-zinc-400"></i>
+                    </figure>
+                </article>
+
+                 <article class="text-center border border-zinc-400 rounded-xl min-w-20 max-w-20  p-4  bg-gradient-to-br from-[#53535359] to-[#0d0d0d] shadow-[0_4px_32px_rgba(255,255,255,0.08)] hover:border-colorWriting hover:scale-110  duration-300 ease-in-out">
+                    <figure>
+                       <i class="fa-brands fa-react text-4xl text-blue-700"></i>
+                    </figure>
+                </article>
+            </section>
+            
+            </div>
+        </section> <!--Skills Section-->
+        
+        <section class="py-4 xl:py-10" id="contatos">
+            <div class="container m-auto max-w-96  p-2 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl text-colorSWhite" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                <h2 class="text-colorWriting font-bold text-2xl lg:text-3xl overflow-hidden whitespace-nowrap animate-typing">Contato <i class="fa-solid fa-message text-colorSWhite dark:text-colorWriting"></i></h2>
+
+                <h3 class="lg:text-2xl dark:text-black ">Aqui pode encontrar mais meios de entrar em contato comigo.</h3>
+
+                <ul class="md:flex md:justify-center md:items-center md:gap-4 lg:gap-8 xl:gap-12" >
+                    <li>
+                        <address class="text-center m-5  text-gray-600">
+                            <i class="fa-solid fa-location-dot text-6xl text-colorWriting"></i>
+                            <h4 class="text-colorWriting">LOCALIZAÇÃO</h4>
+                            <p>Umuarama</p>
+                            <p>Paraná</p>
+                            <p>Brasil</p>
+                        </address>
+                    </li>
+
+                    <li>
+                        <address class="text-center m-5 text-gray-600">
+                            <i class="fa-solid fa-envelope text-colorWriting text-6xl"></i>
+                            <h5 class="text-colorWriting">ENVIE UM E-MAIL</h5>
+                            <p>rafaelfalaschi15@gmail.com</p>
+                        </address>
+                    </li>
+
+                    <li>
+                        <address class="text-center m-5 text-gray-600">
+                           <i class="fa-solid fa-phone text-colorWriting text-6xl"></i>
+                            <h6 class="text-colorWriting">CHAMADA OU WHATSSAP</h6>
+                            <p>(+55) 44 99703-2921</p>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+        </section> <!--Contact Section-->
+    </main>
+
+    <footer class="text-center text-colorSWhite dark:text-black text-sm border-t border-colorWriting p-4">
+            <h2 class="font-bold text-base">RAFAEL <span class="text-colorWriting">FALASCHI</span></h2>
+            <p>Este é meu <span class="text-colorWriting">Website</span> e meu <span class="text-colorWriting">Portfólio</span> oficial.</p>
+            <p>Todos os detalhes dos trabalhos desenvolvidos por mim estão aqui.</p>
+
+            <ul class="flex gap-4 justify-center py-2 text-lg">
+                <li><a href="https://www.linkedin.com/in/rafael-falaschi-97a1542ab/" target="_blank"><i class="fa-brands fa-linkedin text-colorWriting bg-black rounded-full p-2"></i></a></li>
+                <li><a href="https://wa.me/5544997032921" target="_blank"><i class="fa-brands fa-whatsapp text-colorWriting bg-black rounded-full p-2"></i></a></li>
+                <li><a href="https://instagram.com/falaschii_" target="_blank"><i class="fa-brands fa-instagram text-colorWriting bg-black rounded-full p-2"></i></a></li>
+            </ul>
+
+            <p>Copyright © 2025 <a href="#inicio" class="text-colorWriting">Rafael Falaschi.</a> Todos os direitos reservados. </p>
+    </footer>
+
+    <script src="./src/scripts.js"></script>
+</body>
+
+</html>
